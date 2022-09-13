@@ -1,0 +1,25 @@
+op:
+user: 5
+max=5
+min=5
+
+user: 7
+max=7
+min=5
+
+user: 4
+max=7
+min:4
+
+/////
+
+
+user: 1,4,2,3,5,7
+max = user[0];
+min=user[0];
+
+
+for{
+max=7
+min=1
+}
