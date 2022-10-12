@@ -8,11 +8,11 @@ import Chart from "./Chart";
 import Navbar from "./Navbar";
 import React from "react";
 import Profile from "./Profile";
-import Create from "./Create";
+
 import { Context } from "./Context";
 import { useState } from "react";
 import Cardbody from "./Cardbody";
-import Edit from "./Edit";
+
 function App() {
   const [context, setContext] = useState("block");
   return (
