@@ -41,15 +41,21 @@
 .interface > * {
   margin-bottom: 20px;
 }
+.link {
+  text-decoration: none;
+  display: flex;
+  /* justify-content: space-around; */
+  color: rgb(129, 127, 127);
+}
 .main-menu {
-  opacity: 70%;
   font-size: 16px;
   text-decoration: none;
   color: white;
 }
 .main-menu:hover {
+  opacity: 70%;
   color: white;
-  opacity: 100%;
+
   cursor: pointer;
 }
 
@@ -129,7 +135,10 @@
   opacity: 70%;
   font-size: 16px;
 }
-
+.component_button {
+  color: white;
+  background-color: yellow;
+}
 .side-menu:hover {
   opacity: 100%;
   cursor: pointer;
@@ -152,6 +161,10 @@
 .mini-font:hover {
   opacity: 100%;
   color: white;
+}
+.mini-comp {
+  display: flex;
+  align-items: center;
 }
 .sideicon-mini {
   margin-bottom: 5px;
@@ -179,20 +192,13 @@
   justify-content: center;
 }
 .media-content {
-  width: max-content;
   position: relative;
 }
 .typo {
   text-transform: uppercase;
   font-family: serif;
 }
-.container {
-  display: flex;
-  justify-content: center;
-}
-.left-right {
-  padding: 15px;
-}
+
 .left,
 .right {
   background-color: rgba(128, 128, 128, 0.725);
@@ -221,4 +227,13 @@
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+.fact-body {
+  position: relative;
+  width: fit-content;
+  height: 500px;
+  margin-left: 20px;
+}
+.content-detail {
+  padding: 10px;
 }

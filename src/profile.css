@@ -1,0 +1,31 @@
+.upinfo {
+  background-color: rgb(13, 150, 236);
+  height: 40px;
+}
+
+.rajapng {
+  width: 350px;
+
+  object-fit: cover;
+}
+.containraja {
+  display: flex;
+  justify-content: center;
+}
+#infoabout {
+  display: grid;
+  place-content: center;
+}
+.hi,
+.h4,
+.h6 {
+  text-align: center;
+}
+.pinfo {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+}

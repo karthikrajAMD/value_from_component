@@ -7,9 +7,12 @@ import Drawer from "./Drawer";
 import Chart from "./Chart";
 import Navbar from "./Navbar";
 import React from "react";
-import Piechart from "./Piechart";
+import Profile from "./Profile";
+import Create from "./Create";
 import { Context } from "./Context";
 import { useState } from "react";
+import Cardbody from "./Cardbody";
+import Edit from "./Edit";
 function App() {
   const [context, setContext] = useState("block");
   return (
@@ -23,9 +26,10 @@ function App() {
             <Navbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/Card" element={<ActionAreaCard />} />
+              <Route path="/facts" element={<ActionAreaCard />} />
               <Route path="/chart" element={<Chart />} />
-              <Route path="/pie" element={<Piechart />} />
+              <Route path="/card" element={<Cardbody />} />
+              <Route path="/profile" element={<Profile />} />
             </Routes>
           </div>
         </Context.Provider>
