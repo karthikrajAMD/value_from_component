@@ -19,7 +19,7 @@ function App() {
     <>
       <div className="app">
         <Context.Provider value={[context, setContext]}>
-          <div>
+          <div className="sidebar-app">
             <Drawer />
           </div>
           <div className="content-col   ">

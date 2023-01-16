@@ -3,16 +3,10 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import { Context } from "./Context";
-import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import { styled, alpha } from "@mui/material/styles";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import EditIcon from "@mui/icons-material/Edit";
-import Divider from "@mui/material/Divider";
-import ArchiveIcon from "@mui/icons-material/Archive";
 import FileCopyIcon from "@mui/icons-material/FileCopy";
-import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const StyledMenu = styled((props) => (
@@ -97,9 +91,9 @@ function Drawer() {
           <hr className="divider" />
           <div className="sidebar-content">
             <div className="dash">
-              <i className="fas fa-tachometer-alt sideicon"></i>
               {/* <p >Dashboard</p> */}
               <Link className="main-menu dashboard " to="/">
+                <i className="fas fa-tachometer-alt sideicon"></i>
                 Dashboard
               </Link>
             </div>
@@ -108,7 +102,6 @@ function Drawer() {
             <div className="interface">
               <p className="inter">INTERFACE</p>
               <div className="menu-item">
-                <i className="fa-sharp fa-solid fa-gear sideicon"></i>
                 <Button
                   className="component_button "
                   to="/"
@@ -116,6 +109,7 @@ function Drawer() {
                   onClick={handleClick}
                   endIcon={<KeyboardArrowDownIcon />}
                 >
+                  <i className="fa-sharp fa-solid fa-gear sideicon"></i>
                   Components
                 </Button>
                 <StyledMenu
@@ -139,14 +133,14 @@ function Drawer() {
                 </StyledMenu>
               </div>
               <div className="menu-item">
-                <i className="fa-solid fa-wrench sideicon"></i>
                 <Link className="main-menu" to="/facts">
+                  <i className="fa-solid fa-wrench sideicon"></i>
                   Facts
                 </Link>
               </div>
               <div className="menu-item">
-                <BarChartIcon className="sideicon" />
                 <Link className="main-menu" to="/chart">
+                  <BarChartIcon className="sideicon" />
                   Chart
                 </Link>
               </div>
@@ -161,9 +155,8 @@ function Drawer() {
             <hr className="divider-mini" />
             <div className="sidebar-content">
               <div className="side-menu">
-                <i className="fas fa-tachometer-alt sideicon-mini"></i>
-
                 <Link className="mini-font dashboard " to="/">
+                  <i className="fas fa-tachometer-alt sideicon-mini"></i>
                   Dashboard
                 </Link>
               </div>
@@ -172,13 +165,12 @@ function Drawer() {
               <div className="interface">
                 <p className="inter">INTERFACE</p>
                 <div className="side-menu">
-                  <i className="fa-sharp fa-solid fa-gear sideicon-mini"></i>
-
                   <div
                     className="mini-font mini-comp m-0"
                     color="inherit"
                     onClick={handleClick}
                   >
+                    <i className="fa-sharp fa-solid fa-gear sideicon-mini"></i>
                     Components
                     <KeyboardArrowDownIcon />
                   </div>
@@ -203,14 +195,14 @@ function Drawer() {
                   </StyledMenu>
                 </div>
                 <div className="side-menu">
-                  <i className="fa-solid fa-wrench sideicon-mini"></i>
                   <Link className="mini-font" to="/facts">
+                    <i className="fa-solid fa-wrench sideicon-mini"></i>
                     Facts
                   </Link>
                 </div>
                 <div className="side-menu">
-                  <BarChartIcon className="sideicon-mini" />
                   <Link className="mini-font" to="/chart">
+                    <BarChartIcon className="sideicon-mini" />
                     Chart
                   </Link>
                 </div>

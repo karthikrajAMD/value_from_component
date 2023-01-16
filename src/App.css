@@ -15,7 +15,6 @@
     display: flex;
   }
 }
-
 .sidebar {
   background-color: #4e73df;
   color: white;
@@ -49,6 +48,8 @@
 }
 .main-menu {
   font-size: 16px;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
 }
@@ -155,6 +156,8 @@
 .mini-font {
   font-size: 12px;
   opacity: 70%;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: white;
 }
@@ -231,7 +234,7 @@
 .fact-body {
   position: relative;
   width: fit-content;
-  height: 500px;
+  /* height: 500px; */
   margin-left: 20px;
 }
 .content-detail {
